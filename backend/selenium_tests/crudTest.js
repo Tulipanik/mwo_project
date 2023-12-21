@@ -93,7 +93,7 @@ async function login(driver) {
   await inputUsername.sendKeys(process.env.ADMINNAME);
 
   let inputPassword = await driver.findElement(By.id("password"));
-  await inputPassword.sendKeys(process.env.PASSWORD);
+  await inputPassword.sendKeys(process.env.PASSWORD_USER);
 
   let button = await driver.findElement(By.id("login"));
   button.click();
