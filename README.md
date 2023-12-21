@@ -19,4 +19,7 @@ Zadanie polegało na przygotowaniu odpowiedniego oprogramowania typu CRUD oraz p
    ![Ustawienia pipeline 1](/images/pipeline_settings.png)
    ![Ustawienia pipeline 2](/images/pipeline_settings_2.png)
 
-Należy również ytworzyć token git hub, można to zrobić w ustawieniach użytkownika
+Należy również ytworzyć token git hub, można to zrobić w ustawieniach użytkownika.
+   ![GITHUB token](/images/image.png)
+
+4. Następnie należy utworzyć pipeline, który wykona wymagane kroki (kod dostępny w repozytorium). Niestety w moim przypadku nie udało się uruchomić testów. Za to umożliwiona jest konfiguracja środowiska, uruchomienie programu oraz zgłoszenie buga.
