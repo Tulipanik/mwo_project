@@ -28,20 +28,13 @@ jobs:
           echo "PORT_DB=${{secrets.PORT_DB}}" >> ./.env
 
           cat .env
-
-        # env:
-        #   PORT: ${{ secrets.PORT }}
-        #   SECRET: ${{ secrets.SECRET }}
-        #   ADMINNAME: ${{ secrets.ADMINNAME }}
-        #   PASSWORD: ${{ secrets.PASSWORD }}
-        #   PASSWORD_DB: ${{ secrets.PASSWORD_DB }}
-        #   PORT_DB: ${{ secrets.PORT_DB }}
-
+          
       - name: Move to backend and run
         working-directory: ./backend
         run: |
           npm i 
           node app.js &
+          curl http://localhost:8080/getAllBooks
 
       - name: Run frontend
         working-directory: ./frontend
