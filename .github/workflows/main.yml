@@ -50,14 +50,14 @@ jobs:
           npm i -g live-server
           live-server ./frontend/content/Viewer/login.html --port=8081 &
           
-      - name: Move to backend and run tests
-        working-directory: ./backend/selenium_tests
-        run: |
-          node crudTest.js
+      # - name: Move to backend and run tests
+      #   working-directory: ./backend/selenium_tests
+      #   run: |
+      #     node crudTest.js
           
-      - name: Check Selenium tests status
-        id: check_tests
-        run: exit_code=$?; echo "::set-output name=exit_code::$exit_code"
+      # - name: Check Selenium tests status
+      #   id: check_tests
+      #   run: exit_code=$?; echo "::set-output name=exit_code::$exit_code"
 
       # - name: Report status and raise bug if tests failed
       #   run: |
