@@ -91,10 +91,10 @@ async function runTests() {
 
 async function login(driver) {
   let inputUsername = await driver.findElement(By.id("username"));
-  await inputUsername.sendKeys(process.env.ADMINNAME);
+  await inputUsername.sendKeys("jestem");
 
   let inputPassword = await driver.findElement(By.id("password"));
-  await inputPassword.sendKeys(process.env.PASSWORD_USER);
+  await inputPassword.sendKeys("admin");
 
   let button = await driver.findElement(By.id("login"));
   button.click();
