@@ -34,11 +34,11 @@ jobs:
         run: |
           npm i 
           node app.js &
-          curl http://localhost:8080/getAllBooks
 
       - name: Run frontend
         working-directory: ./frontend
         run: |
+          curl http://localhost:8080/getAllBooks
           npm i
           npm install chromedriver@latest
           npm install selenium-webdriver@latest
