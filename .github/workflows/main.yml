@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "PORT=${{secrets.PORT}}" >> ./.env
           echo "SECRET=${{secrets.SECRET}}" >> ./.env
-          echo "PASSWORD=${{secrets.PASSWORD}}" >> ./.env
+          echo "PASSWORD_USER=${{secrets.PASSWORD}}" >> ./.env
           echo "ADMINNAME=${{secrets.ADMINNAME}}" >> ./.env
           echo "PASSWORD_DB=${{secrets.PASSWORD_DB}}" >> ./.env
           echo "PORT_DB=${{secrets.PORT_DB}}" >> ./.env
