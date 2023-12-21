@@ -2,7 +2,8 @@ name: Test
 
 on:
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "basia" ]
+    
   workflow_dispatch:
 
 jobs:
