@@ -26,6 +26,7 @@ async function runTests() {
     await driver.sleep(500);
 
     await driver.navigate().to(await driver.getCurrentUrl());
+    console.log(await driver.getPageSource())
     let getButton = await driver.findElement(By.id("getMenu"));
     await getButton.click();
 
