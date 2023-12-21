@@ -53,9 +53,8 @@ jobs:
       - name: Move to backend and run tests
         working-directory: ./backend/selenium_tests
         run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
           node crudTest.js
+          
       - name: Check Selenium tests status
         id: check_tests
         run: exit_code=$?; echo "::set-output name=exit_code::$exit_code"
